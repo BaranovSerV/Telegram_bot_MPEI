@@ -5,7 +5,7 @@ import os
 import time
 
 openai.api_key = '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'
-bot = telebot.TeleBot('6900337655:AAHl5nlvHubC53fxx4WQNIcpH-lOHVVQBRw')
+bot = telebot.TeleBot('6718122659:AAETeWZjwaEa6d5stXF_tNUwqSuWNA4A6bo')
 
 log_dir = os.path.join(os.path.dirname(__file__), 'ChatGPT_Logs')
 
