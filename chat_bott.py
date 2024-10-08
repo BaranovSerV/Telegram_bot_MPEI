@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 
 # Токены
 TELEGRAM_TOKEN = '6718122659:AAETeWZjwaEa6d5stXF_tNUwqSuWNA4A6bo'
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = 'sk-svcacct-ZWHxdjVKI--ZipPXsqR6X91mWFU3cMDhWQO1aDwt6pZAq8F8I042RklIi2FVhB8CT3BlbkFJAkZ8UPnqQfteWMkknvIR6ng7LsrhgKLdFo3g7bxJkpTUvKRoLV0ljgCcDJ8rasEA'
 
 # Настройка OpenAI API
 openai.api_key = OPENAI_API_KEY
