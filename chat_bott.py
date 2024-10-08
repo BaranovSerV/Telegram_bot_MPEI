@@ -20,7 +20,7 @@ async def handle_message(update: Update, context):
     # Запрос к OpenAI API
     try:
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="gpt-3.5-turbo",
             prompt=user_message,
             max_tokens=100
         )
