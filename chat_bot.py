@@ -3,6 +3,7 @@ import telebot
 import logging
 import os
 import time
+from openai.error import RateLimitError
 
 openai.api_key = 'sk-svcacct-ZWHxdjVKI--ZipPXsqR6X91mWFU3cMDhWQO1aDwt6pZAq8F8I042RklIi2FVhB8CT3BlbkFJAkZ8UPnqQfteWMkknvIR6ng7LsrhgKLdFo3g7bxJkpTUvKRoLV0ljgCcDJ8rasEA'
 bot = telebot.TeleBot('6718122659:AAETeWZjwaEa6d5stXF_tNUwqSuWNA4A6bo')
@@ -44,6 +45,18 @@ def handle_message(message):
 
 
 print('ChatGPT Bot is working')
+
+def generate_response(prompt):
+    try:
+        completion = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return completion.choices[0].message.content
+    except RateLimitError:
+        return "Превышен лимит запросов к API OpenAI. Пожалуйста, попробуйте позже."
 
 while True:
     try:
