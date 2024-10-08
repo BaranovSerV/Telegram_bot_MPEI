@@ -2,7 +2,7 @@ admins = ['776294107']
 
 """API keys"""
 
-API_TOKEN = '66900337655:AAHl5nlvHubC53fxx4WQNIcpH-lOHVVQBRw'
+API_TOKEN = '6900337655:AAHl5nlvHubC53fxx4WQNIcpH-lOHVVQBRw'
 CONVERTIO_API_KEY = '3ffa2f477818bdc3dd362f37e16b9172'
 CONVERTIO_API_URL = 'https://api.convertio.co/convert'
 
